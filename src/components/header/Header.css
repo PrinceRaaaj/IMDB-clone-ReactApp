@@ -1,34 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;300&display=swap");
 .header {
-    margin: 0 2.5rem;
-    padding: .5rem 0;
-    align-items: center;
-    display: flex;
-    justify-content:space-between;
+  margin: 0 2.5rem;
+  padding: 0.5rem 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
 }
 
-.headerLeft, .headerRight {
-    display: flex;
-    align-items: center;
-
+.headerLeft,
+.headerRight {
+  display: flex;
+  align-items: center;
 }
 
-a > span{
-    margin: 0 30px;
-    font-size: 1.3rem;
-    cursor: pointer;
-    color: white;
+a > span {
+  margin: 0 30px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: white;
 }
 
 a > span:hover {
-    color: red;
+  color: red;
 }
 
 .header__icon {
-    width: 80px;
-    cursor: pointer;
+  width: 80px;
+  cursor: pointer;
 }
 
 .user__avatar {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
+@media  screen and (max-width: 576px){
+  .header{
+    padding: 0;
+    margin: .5rem;
+  }
+  .header__icon{
+    padding: 0;
+    margin: 0;
+  }
+  .popular{
+    font-size: 1rem;
+    
+  }
+  .topRated{
+    font-size: .9rem;
+  }
+  .upcoming{
+    font-size: 1rem;
+  }
+}
