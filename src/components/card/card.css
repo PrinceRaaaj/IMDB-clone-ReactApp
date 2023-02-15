@@ -11,7 +11,7 @@
     z-index:0;
     border: 1px solid rgb(99, 99, 99);
 }
-
+ 
 .cards:hover {
     transform: scale(1.2);
     z-index: 1000;
@@ -59,4 +59,13 @@
     font-style: italic;
     font-size: .75rem;
     margin-bottom: 0.25rem;
+}
+
+@media  screen and (max-width: 576px){
+    .cards{
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+        margin: 1rem;
+    }
 }
